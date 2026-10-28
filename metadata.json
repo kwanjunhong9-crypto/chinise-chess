@@ -1,0 +1,6 @@
+{
+  "name": "楚汉争雄 - 中国象棋天梯记分与棋谱复盘系统",
+  "description": "专业中国象棋赛事与积分管理平台：实时对弈记录、AI裁判自动胜负判定、天梯Elo天梯榜结算、棋谱复盘与导出、管理员权限成员管理与全平台原生App支持。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

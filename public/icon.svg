@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Outer wooden / bronze rim gradient -->
+    <radialGradient id="rimGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="50%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#451a03" />
+    </radialGradient>
+    
+    <!-- Red piece lacquer face -->
+    <radialGradient id="pieceFace" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="60%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#d97706" />
+    </radialGradient>
+
+    <!-- Inner circle shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="innerGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7f1d1d" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Deep dark luxury backdrop for icon -->
+  <rect width="512" height="512" rx="110" fill="#1c1917" />
+  
+  <!-- Subtle decorative ring -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="8 6" opacity="0.4" />
+
+  <!-- Piece outer 3D rim -->
+  <circle cx="256" cy="264" r="200" fill="#291307" filter="url(#shadow)" />
+  <circle cx="256" cy="256" r="200" fill="url(#rimGrad)" stroke="#f59e0b" stroke-width="6" />
+
+  <!-- Inner bevel step -->
+  <circle cx="256" cy="256" r="182" fill="none" stroke="#92400e" stroke-width="4" />
+  
+  <!-- Piece wood/ivory surface -->
+  <circle cx="256" cy="254" r="176" fill="url(#pieceFace)" stroke="#b45309" stroke-width="3" />
+  
+  <!-- Inner groove ring -->
+  <circle cx="256" cy="254" r="150" fill="none" stroke="#dc2626" stroke-width="4" opacity="0.8" />
+
+  <!-- Traditional Chinese Calligraphy Character "帥" (Shuai / General) -->
+  <g fill="#b91c1c" stroke="#991b1b" stroke-width="3" stroke-linejoin="round" filter="url(#innerGlow)">
+    <!-- Custom stylized brush stroke 帥 -->
+    <!-- Left stroke (left side of Shuai) -->
+    <path d="M 180 156 Q 165 200 155 240 Q 165 244 185 244 Q 185 220 187 195 L 210 195 L 210 330 Q 210 355 195 358 Q 185 360 170 356 L 168 375 Q 196 380 216 372 Q 234 362 234 332 L 234 156 Z" />
+    <path d="M 182 258 L 152 280 L 156 300 L 186 280 Z" />
+    
+    <!-- Right side of Shuai (Top roof & towel & cross) -->
+    <path d="M 252 178 L 338 178 L 338 152 L 252 152 Z" />
+    <path d="M 270 215 L 348 215 L 348 194 L 270 194 Z" />
+    
+    <!-- Vertical hanging center -->
+    <path d="M 292 215 L 292 370 Q 292 380 306 380 Q 318 380 318 368 L 318 215 Z" />
+    
+    <!-- Right frame enclosure -->
+    <path d="M 250 250 L 358 250 Q 364 250 364 256 L 364 340 Q 364 366 348 372 Q 336 376 322 372 L 324 352 Q 336 354 342 346 Q 344 342 344 330 L 344 268 L 250 268 Z" />
+  </g>
+
+  <!-- Traditional decorative clouds/corners -->
+  <path d="M 96 96 Q 120 96 128 72" stroke="#d97706" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 416 96 Q 392 96 384 72" stroke="#d97706" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 96 416 Q 120 416 128 440" stroke="#d97706" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 416 416 Q 392 416 384 440" stroke="#d97706" stroke-width="3" fill="none" opacity="0.6"/>
+</svg>
